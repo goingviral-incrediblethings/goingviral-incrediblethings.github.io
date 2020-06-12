@@ -59,7 +59,7 @@ p {
 }
 .topnav ul li.license img,
 .topnav ul li.license a {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   overflow: hidden;
