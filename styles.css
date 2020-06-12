@@ -57,6 +57,21 @@ p {
   text-align: left;
   border-top: 0rem solid #948d89;
 }
+.topnav ul li.license img,
+.topnav ul li.license a {
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  margin: 1vh 1vw;
+  height: 5vh;
+}
+.topnav ul li.license a {
+  background: #343234;
+}
+.topnav ul li.license a:hover {
+  background: #343234;
+}
 .topnav a.active {
   background: #992a2c;
   color: #948d89;
@@ -73,6 +88,9 @@ ul {
   background: #992a2c;
   color: #948d89;
   cursor: pointer;
+}
+.topnav.license {
+  float: right;
 }
 
 /* *
@@ -94,21 +112,24 @@ ul {
   right: 0;
   margin-left: 1rem;
   margin-bottom: 1rem;
+  margin-right: 1rem;
   font-size: 8vw;
 }
 
 /* *
- * Poetry 
+ * Poetry and Questions
  */
 
 ul.poetrybar,
-ul.qbar {
+ul.qbar,
+ul.infobar {
   position: relative;
   overflow: scroll;
   color: #343234;
 }
 ul.poetrybar li a,
-ul.qbar li a {
+ul.qbar li a,
+ul.infobar li a {
   text-decoration: none;
   font-size: 2vh;
   text-indent: 1em;
@@ -124,7 +145,8 @@ ul.qbar li a {
 }
 
 ul.poetrybar li p,
-ul.qbar li p {
+ul.qbar li p,
+ul.infobar li p {
   text-decoration: none;
   font-size: 2vh;
   text-indent: 2em;
@@ -136,13 +158,15 @@ ul.qbar li p {
   padding-top: 0;
 }
 ul.poetrybar li a:hover,
-ul.qbar li a:hover {
+ul.qbar li a:hover,
+ul.infobar li a:hover {
   text-decoration: underline;
   display: block;
   cursor: pointer;
 }
 ul.poetrybar li a.active,
-ul.qbar li a.active {
+ul.qbar li a.active,
+ul.infobar li a.active {
   color: #948d89;
 }
 ul.poetrybar li a.active:hover,
@@ -254,3 +278,7 @@ ul.qbar li a.active:hover {
     transform: translateX(25%);
   }
 }
+
+/* * 
+ * Creative Commons License 
+*/
