@@ -7,6 +7,7 @@
  * styles
  */
 
+
 * {
   margin: 0;
   padding: 0;
@@ -18,79 +19,52 @@
 
 body {
   margin: 0;
+  background: #c89f93;
 }
 
-h1 {
+h1,
+h1 a {
   font-weight: 400;
-  margin: 1vh 1vw;
+  margin: 6vh;
+  margin-bottom: 0;
+  font-size: 4em;
+  text-decoration: none;
+  text-align: center;
+  text-indent: 7vw;
+}
+h1 a:hover {
+  text-decoration: underline;
+}
+
+.homecopy h1 {
+  margin-top: 1em;
+  font-weight: 700;
+  text-align: center;
+  text-indent: 1vw;
+}
+.homecopy h2 {
+  text-align: right;
+  bottom: 0;
+  right: 0;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 5rem;
+  font-size: 8vw;
+}
+
+h4 {
+  font-weight: 400;
+  margin: 6vh 4.2vw;
   margin-bottom: 0;
   font-size: 6vh;
+  text-decoration: none;
+  text-align: left;
+  text-indent: 7vw;
 }
 p {
   font-family: "open sans";
   font-size: 1.25rem;
   text-align: justify;
-}
-
-/* Solid Colour */
-
-.solid-background {
-  background: #c89f93;
-}
-/* *
- * topnav
- */
-.topnav {
-  background: #343234;
-  border-bottom: 0.5vh solid #948d89;
-  overflow: hidden;
-  height: 7.4vh;
-}
-.topnav ul li a {
-  background: #343234;
-  text-decoration: none;
-  text-transform: capitalize;
-  font-size: 2.5vh;
-  padding: 2.5vh;
-  color: #948d89;
-  float: left;
-  text-align: left;
-  border-top: 0rem solid #948d89;
-}
-.topnav ul li.license img,
-.topnav ul li.license a {
-  position: absolute;
-  top: 0;
-  right: 0;
-  overflow: hidden;
-  margin: 1vh 1vw;
-  height: 5vh;
-}
-.topnav ul li.license a {
-  background: #343234;
-}
-.topnav ul li.license a:hover {
-  background: #343234;
-}
-.topnav a.active {
-  background: #992a2c;
-  color: #948d89;
-  cursor: pointer;
-}
-ul {
-  list-style-type: none;
-}
-.topnav ul li a:hover {
-  background: #a74639;
-  color: #343234;
-}
-.topnav ul li a.active:hover {
-  background: #992a2c;
-  color: #948d89;
-  cursor: pointer;
-}
-.topnav.license {
-  float: right;
 }
 
 /* *
@@ -104,6 +78,9 @@ ul {
   margin-left: 1rem;
   margin-top: 1rem;
   font-weight: 700;
+  text-align: left;
+  text-indent: 1vw;
+  padding 
 }
 .homecopy h2 {
   position: absolute;
@@ -116,87 +93,205 @@ ul {
   font-size: 8vw;
 }
 
+
+
 /* *
- * Poetry and Questions
+ * topnav
+ */
+/* .topnav {
+  background: #343234;
+  border-bottom: 0.5vh solid #948d89;
+  overflow: hidden;
+  height: 7.4vh;
+}
+.topnav a {
+  background: #343234;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 2.5vh;
+  padding: 2.5vh;
+  color: #948d89;
+  float: left;
+  text-align: left;
+  border-top: 0rem solid #948d89;
+}
+
+.topnav a.active {
+  background: #992a2c;
+  color: #948d89;
+  cursor: pointer;
+}
+ul {
+  list-style-type: none;
+}
+.topnav a:hover {
+  background: #a74639;
+  color: #343234;
+}
+.topnav a.active:hover {
+  background: #992a2c;
+  color: #948d89;
+  cursor: pointer;
+} */
+
+/* *
+ * SIDE NAV
+*/
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  padding-left: 1vw;
+  width: 8vw; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1.5em; /* Increase font size */
+  font-family: inherit;
+  color: #ca9891;
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  border: 1px solid #ca9891;
+  border-left: 0px;
+  opacity: 0.9;
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#home {
+  top: 30vh;
+  background-color: #922422;
+}
+
+#about {
+  top: 38vh;
+  background-color: #7f3527; /* Blue */
+}
+
+#poetry {
+  top: 46vh;
+  background-color: #862d28; /* Red */
+}
+
+#questions {
+  top: 54vh;
+  background-color: #89352b; /* Light Black */
+}
+
+#random {
+  top: 62vh;
+  background-color: #7b322b;
+}
+
+#copyright {
+  bottom: 10vh;
+  background: #222222;
+  text-align: right;
+  padding-right: 0em;
+  text-indent: 4vw;
+}
+
+
+
+/* *
+ * Poetry and Questions  -- These styles should be separated 
  */
 
-ul.poetrybar,
+.poetrybar,
 ul.qbar,
 ul.infobar {
   position: relative;
   overflow: scroll;
   color: #343234;
+  font-size: 1.5em;
+  font-family: inherit;
+  margin-left: 2vw;
+  line-height: 3em;
 }
-ul.poetrybar li a,
+.poetrybar a,
 ul.qbar li a,
 ul.infobar li a {
   text-decoration: none;
-  font-size: 2vh;
-  text-indent: 1em;
+  text-indent: 2em;
+  text-align: left;
   line-height: 4vh;
   margin-bottom: 0;
   padding-bottom: 0;
-  display: block;
+  display: inline;
 }
-ul.qbar li a {
+.qbar li a {
   text-align: center;
   font-size: 4vh;
-  line-height: 16vh;
 }
 
-ul.poetrybar li p,
-ul.qbar li p,
-ul.infobar li p {
+.poetrybar {
+    line-height: 1em;
+}
+.poetrybar p {
+  padding-left: 0.5em;
+}
+.poetrybar p,
+ul.qbar li p, {
   text-decoration: none;
-  font-size: 2vh;
+  font-size: 1em;
   text-indent: 2em;
-  line-height: 4vh;
-  display: block;
+  display: inline;
   text-align: left;
   margin-top: 0;
   margin-bottom: 0.5vh;
   padding-top: 0;
+
 }
-ul.poetrybar li a:hover,
-ul.qbar li a:hover,
-ul.infobar li a:hover {
+.poetrybar a:hover,
+ul.qbar li a:hover, {
   text-decoration: underline;
-  display: block;
+  display: inline;
   cursor: pointer;
 }
-ul.poetrybar li a.active,
-ul.qbar li a.active,
-ul.infobar li a.active {
-  color: #948d89;
+.poetrybar a.active,
+.qbar a.active,{
+  text-decoration: underline;
 }
-ul.poetrybar li a.active:hover,
-ul.qbar li a.active:hover {
-  text-decoration: none;
+.poetrybar a.active:hover,
+.qbar a.active:hover {
   cursor: default;
+}
+
+.infobar{
+
 }
 
 .poem,
 .questions {
   font-family: "open sans";
-  display: block;
+  display: inline;
   text-align: left;
   margin-left: 1vw;
   margin-right: 2vw;
   text-overflow: scroll;
 }
-
-.questions {
+.poem {
+  line-height: 2em;
+}
+.questions a {
   font-size: 1.5em;
   text-align: center;
-  line-height: 6vw;
+  list-style-type: none;
+  text-decoration: none;
 }
-.poem br,
-.questions br {
-  display: block;
-  content: "";
-  line-height: 100%;
-  margin-top: 2vh;
+.questions a:hover{
+  text-decoration: underline;
 }
+
+.questions a.active {
+  text-decoration: underline;
+}
+
 
 /* *
  * Columns
@@ -204,14 +299,30 @@ ul.qbar li a.active:hover {
 .column {
   float: right;
   width: 100%;
-  height: calc(100vh - 20vh);
+  height: 83vh;
   overflow: scroll;
   margin: 1vh 1vw;
+  display: block;
+}
+.column.question {
+  float: right;
+  width: 33.33%;
+  height: calc(100vh - 10vh);
+  overflow: scroll;
+  margin: 1vh 1vw;
+}
+.column.question a.active,
+.column.left a.active {
+  text-decoration: underline;
 }
 
 /* Clear Floats after the columns */
 .row {
   display: flex;
+  width: 90%;
+  margin-left: 8vw;
+  margin-top: 3vh;
+  z-index: 1000;
 }
 
 .row:after {
@@ -247,7 +358,7 @@ ul.qbar li a.active:hover {
   height: calc (100% - 1em);
 }
 .bg2 {
-  animation: slide 5s ease-in-out infinite alternate-reverse;
+  animation: slide 9s ease-in-out infinite alternate-reverse;
   background-image: linear-gradient(170deg, #494649 50%, #c89f93 50%);
   bottom: 0;
   left: -50%;
@@ -279,6 +390,12 @@ ul.qbar li a.active:hover {
   }
 }
 
-/* * 
- * Creative Commons License 
-*/
+/* HTML COMMENT BOX */
+#HCB_comment_box
+  p, h3 {
+  text-align: left;
+  text-indent: -20vw;
+  font-size: 1em;
+  margin-top: 0.5vh;
+  
+}

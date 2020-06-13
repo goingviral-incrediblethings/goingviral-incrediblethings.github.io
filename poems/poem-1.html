@@ -1,49 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Going Viral: Poetry</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="/js/script.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Going Viral: Poetry</title>
-  <link rel="stylesheet" href="../styles.css" />
-</head>
-
-<body class="solid-background">
-  <div class="content">
-    <div class="topnav">
-      <ul>
-        <li><a href="../index.html">home</a></li>
-        <li><a href="../about.html">about</a></li>
-        <li><a href="#" class="active">poetry</a></li>
-        <li><a href="../questions.html">questions</a></li>
-        <li><a href="../information.html">information</a></li>
-      </ul>
+  <body>
+    <!-- SIDENAV -->
+    <div id="mySidenav" class="sidenav">
+      <a href="/index.html" id="home">home</a>
+      <a href="/about.html" id="about">about</a>
+      <a href="/poetry.html" id="poetry">poetry</a>
+      <a href="/questions.html" id="questions">questions</a>
+      <a href="javascript:randomlink()" id="random">Random</a>
+      <a href="/copyright.html" id="copyright">&#169;</a>
     </div>
-    <div class="solid-background">
-      <h1 id="poetry">Poetry</h1>
+    <div>
+      <h4>Poetry</h4>
       <div class="row">
-        <div class="column">
+        <div class="column left">
           <!-- Poem List Column -->
-          <ul class="poetrybar">
-            <li>
-              <a href="#" class="active">Let walls fall when you look</a>
-              <p>by Beth Timson</p>
-            </li>
-            <li>
-              <a href="./poem-2.html">In the morning after the storm...</a>
-              <p>by Beth Timson</p>
-            </li>
-            <li>
-              <a href="./poem-3.html">I want to hold you, but I can’t</a>
-              <p>by Beth Timson</p>
-            </li>
-          </ul>
+          <div class="poetrybar">
+            <a href="#" class="active">Lets walls fall when you look</a><br />
+            <p>by Beth Timson</p>
+            <br /><br />
+            <a href="./poem-2.html">In the morning after the storm...</a><br />
+            <p>by Beth Timson</p>
+            <br /><br />
+            <a href="./poem-3.html">I want to hold you, but I can’t</a><br />
+            <p>by Beth Timson</p>
+          </div>
         </div>
-        <div class="column">
-          <br />
+        <div class="column poem">
           <!-- Active poem -->
           <p class="poem" id="poem-1">
-            Let walls fall when you look <br />
+            Lets walls fall when you look <br />
             And says sometimes we have to play football in <br />
             No mans land before returning to the trenches <br />
             We can be on the same side <br />
@@ -53,16 +47,12 @@
             But I look at you and say I am here at last <br />
             How long have you been waiting? <br />
             You say long enough to know what came before was worth it all
-            <br />
-            If finding a curiosity that will last a lifetime and adventure in
-            the face of what once made you scared<br />
+            <br />If finding a curiosity that will last a lifetime and adventure
+            in the face of what once made you scared<br />
             Is the thing that makes me want to fall in love with you.
           </p>
         </div>
       </div>
-
-      <p></p>
     </div>
-</body>
-
+  </body>
 </html>

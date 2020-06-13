@@ -5,42 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Going Viral: Poetry</title>
     <link rel="stylesheet" href="../styles.css" />
+    <script src="/js/script.js" defer></script>
   </head>
 
-  <body class="solid-background">
-    <div class="topnav">
-      <ul>
-        <li><a href="../index.html">home</a></li>
-        <li><a href="../about.html">about</a></li>
-        <li><a href="#" class="active">poetry</a></li>
-        <li><a href="../questions.html">questions</a></li>
-        <li><a href="../information.html">information</a></li>
-      </ul>
+  <body>
+    <!-- SIDENAV -->
+    <div id="mySidenav" class="sidenav">
+      <a href="/index.html" id="home">home</a>
+      <a href="/about.html" id="about">about</a>
+      <a href="/poetry.html" id="poetry">poetry</a>
+      <a href="/questions.html" id="questions">questions</a>
+      <a href="javascript:randomlink()" id="random">Random</a>
+      <a href="/copyright.html" id="copyright">&#169;</a>
     </div>
-    <div class="solid-background">
-      <h1 id="poetry">Poetry</h1>
+    <div>
+      <h4>Poetry</h4>
       <div class="row">
         <div class="column left">
           <!-- Poem List Column -->
-          <ul class="poetrybar">
-            <li>
-              <a href="./poem-1.html">Let walls fall when you look</a>
-              <p>by Beth Timson</p>
-            </li>
-            <li>
-              <a href="./poem-2.html">In the morning after the storm...</a>
-              <p>by Beth Timson</p>
-            </li>
-            <li>
-              <a href="#" class="active">I want to hold you, but I can’t</a>
-              <p>by Beth Timson</p>
-            </li>
-          </ul>
+          <div class="poetrybar">
+            <a href="./poem-1.html">Lets walls fall when you look</a><br />
+            <p>by Beth Timson</p>
+            <br /><br />
+            <a href="./poem-2.html">In the morning after the storm...</a><br />
+            <p>by Beth Timson</p>
+            <br /><br />
+            <a href="#" class="active">I want to hold you, but I can’t</a><br />
+            <p>by Beth Timson</p>
+          </div>
         </div>
-        <div class="column right">
-          <br />
+        <div class="column poem">
           <!-- Active poem -->
-          <p class="poem" id="poem-2">
+          <p class="poem" id="poem-3">
             I want to hold you, but I can’t <br />
             I don’t think I ever have not really<br />
             I don’t think we could <br />
